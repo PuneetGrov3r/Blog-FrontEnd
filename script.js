@@ -2,6 +2,33 @@ function start() {
     var $menumain = document.getElementsByClassName('menumain');
     var $signin = document.getElementsByClassName('signin');
     var $signup = document.getElementsByClassName('signup');
+    var country = [
+        { title: 'Andorra' },
+        { title: 'United Arab Emirates' },
+        { title: 'Afghanistan' },
+        { title: 'Antigua' },
+        { title: 'Anguilla' },
+        { title: 'Albania' },
+        { title: 'Armenia' },
+        { title: 'Netherlands Antilles' },
+        { title: 'Angola' },
+        { title: 'Argentina' },
+        { title: 'American Samoa' },
+        { title: 'Austria' },
+        { title: 'Australia' },
+        { title: 'Aruba' },
+        { title: 'Aland Islands' },
+        { title: 'Azerbaijan' },
+        { title: 'Bosnia' },
+        { title: 'Barbados' },
+        { title: 'Bangladesh' },
+        { title: 'Belgium' },
+        { title: 'Burkina Faso' },
+        { title: 'Bulgaria' },
+        { title: 'Bahrain' },
+        { title: 'Burundi' }
+        // etc
+    ];
 
     function sidemenutoggle() {
         $('.ui.labeled.icon.sidebar')
@@ -11,6 +38,13 @@ function start() {
     function signinshow() {
         $('.ui.signin1.modal')
             .modal('show');
+    }
+
+    function countrylist() {
+        $('.ui.search')
+            .search({
+                source: country
+            });
     }
 
     function signupshow() {
@@ -26,6 +60,7 @@ function start() {
     for (i = 0; i < $menumain.length; i++) {
         $menumain[i].addEventListener("click", sidemenutoggle, false);
     }
+    $('.ui.search.country').search({ source: country });
 
 }
 window.onload = start;
