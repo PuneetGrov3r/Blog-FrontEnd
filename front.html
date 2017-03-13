@@ -39,40 +39,65 @@
         </div>
         <div class="ui basic signin1 modal">
             <div class="ui icon header">
-                <i class="desktop icon"></i> Login
+                <i class="huge desktop icon"></i> Login
             </div>
             <div class="content">
-                <p></p>
+                <form class="ui form">
+                    <div class="field">
+                        <label>Email Id:</label>
+                        <input type="text" name="email-id" placeholder="john@gmail.com">
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" name="password" placeholder="password">
+                    </div>
+                </form>
             </div>
             <div class="actions">
-                <div class="ui green ok inverted button">
+                <button class="ui green ok inverted button">
                     <i class="checkmark icon"></i> Login
-                </div>
-                <div class="ui red basic cancel inverted button">
+                </button>
+                <button class="ui red basic cancel inverted button">
                     <i class="remove icon"></i> Cancel
-                </div>
+                </button>
             </div>
         </div>
         <div class="ui basic signup1 modal">
             <div class="ui icon header">
-                <i class="sort content ascending icon"></i> SignUp
+                <i class="huge sort content ascending icon"></i> SignUp
             </div>
             <div class="content">
-                <p></p>
+                <form class="ui form">
+                    <label>First Name:</label>
+                    <input type="text" name="first-name" placeholder="First Name">
+
+                    <div class="field">
+                        <label>Last Name:</label>
+                        <input type="text" name="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="field">
+                        <label>Email Id:</label>
+                        <input type="text" name="email-id" placeholder="john@gmail.com">
+                    </div>
+                    <div class="field">
+                        <label>Pasword:</label>
+                        <input type="text" name="password" placeholder="password">
+                    </div>
+                    <div class="field">
+                        <label>Retype Pasword:</label>
+                        <input type="text" name="re-password" placeholder="password">
+                    </div>
+                </form>
             </div>
             <div class="actions">
-                <div class="ui green ok inverted button">
-                    <i class="checkmark icon"></i> SignUp
-                </div>
-                <div class="ui red basic cancel inverted button">
-                    <i class="remove icon"></i> Cancel
-                </div>
+                <button class="ui green ok inverted button">
+                    <i class="checkmark icon"></i>Submit
+                </button>
+                <button class="ui red basic cancel inverted button">
+                    <i class="remove icon"></i>Cancel
+                </button>
             </div>
         </div>
-
-
-
-
     </div>
 </body>
 <script src="script.js" type="text/javascript"></script>
