@@ -17,3 +17,7 @@ html {
 .frontimage {
     max-height: 90vh;
 }
+
+.frontcard {
+    min-width: 100% !important;
+}
