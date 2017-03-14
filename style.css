@@ -9,3 +9,11 @@ html {
     padding-top: 0px;
     margin-top: 0px;
 }
+
+.topmenu {
+    margin-bottom: 0em !important;
+}
+
+.frontimage {
+    max-height: 90vh;
+}
