@@ -47,6 +47,7 @@ body {
 }
 
 .topmenuseg {
+    left: -6px !important;
     padding: 0em !important;
     position: fixed !important;
     z-index: 999 !important;
@@ -55,25 +56,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-    z-index: 9999 !important;
     width: 7px;
 }
-
-
-/* Track */
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Handle */
-
 ::-webkit-scrollbar-thumb {
-    background: rgba(100, 100, 100, 0.8);
+    background: rgba(150, 150, 150, 0.8);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(88, 88, 88, 0.4);
 }
