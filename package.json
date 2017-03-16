@@ -1,14 +1,12 @@
 {
-  "name": "blogfront",
-  "version": "1.0.0",
-  "description": "frontend part of my blog",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm start"
-  },
-  "author": "Puneet Grover",
-  "license": "MIT",
-  "dependencies": {
-    "semantic-ui": "^2.2.9"
-  }
+    "name": "blogfront",
+    "version": "1.0.0",
+    "description": "frontend part of my blog",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm start"
+    },
+    "author": "Puneet Grover",
+    "license": "MIT",
+    "dependencies": {}
 }
