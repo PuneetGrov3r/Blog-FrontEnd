@@ -30,6 +30,7 @@ body {
 
 .conseg {
     top: -1px;
+    padding-bottom: 5em !important;
 }
 
 .cardcontent {
@@ -47,9 +48,10 @@ body {
 }
 
 .topmenuseg {
-    left: -6px !important;
-    padding: 0em !important;
+    border-radius: 0em !important;
     position: fixed !important;
+    padding: 0em !important;
+    margin: 0em !important;
     z-index: 999 !important;
     min-width: 100% !important;
     top: -3px !important;
@@ -61,4 +63,17 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: rgba(150, 150, 150, 0.8);
+}
+
+.sidebarmenu {
+    top: 2.85714286em !important;
+}
+
+.footer {
+    padding: 0em !important;
+}
+
+.footerseg {
+    height: 7em !important;
+    border-radius: 0em !important;
 }

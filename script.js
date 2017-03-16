@@ -7,7 +7,7 @@ function start() {
     ];
 
     function sidemenutoggle() {
-        $('.ui.labeled.icon.sidebar')
+        $('.ui.sidebar')
             .sidebar('toggle');
     }
 
