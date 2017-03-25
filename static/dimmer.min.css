@@ -8,7 +8,7 @@
  *
  */
 
-.dimmable:not(.body) {}
+/*.dimmable:not(.body) {}*/
 
 .ui.dimmer {
     display: none;
