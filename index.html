@@ -2,37 +2,60 @@
 
 <html>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="MySite">
-<meta name="author" content="PuneetGrover">
-<title>Puneet Grover</title>
-<link href="style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="semantic/dist/semantic.min.js"></script>
-
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MySite">
+    <meta name="author" content="PuneetGrover">
+    <title>Puneet Grover</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/card.min.css">
+    <link rel="stylesheet" type="text/css" href="static/sidebar.min.css">
+    <link rel="stylesheet" type="text/css" href="static/icon.min.css">
+    <link rel="stylesheet" type="text/css" href="static/segment.min.css">
+    <link rel="stylesheet" type="text/css" href="static/menu.min.css">
+    <link rel="stylesheet" type="text/css" href="static/item.min.css">
+    <link rel="stylesheet" type="text/css" href="static/image.min.css">
+    <link rel="stylesheet" type="text/css" href="static/header.min.css">
+    <link rel="stylesheet" type="text/css" href="static/grid.min.css">
+    <link rel="stylesheet" type="text/css" href="static/dimmer.min.css">
+    <link rel="stylesheet" type="text/css" href="static/message.min.css">
+    <link rel="stylesheet" type="text/css" href="static/transition.min.css">
+    <link rel="stylesheet" type="text/css" href="static/modal.min.css">
+    <link rel="stylesheet" type="text/css" href="static/divider.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="static/sidebar.min.js"></script>
+    <script src="static/dimmer.min.js"></script>
+    <script src="static/modal.min.js"></script>
+    <script src="static/transition.min.js"></script>
+</head>
 
 <body>
-
+    <div class="ui warning floating message warmsg" style="position:fixed !important; max-width:30vw !important; margin:0em !important; z-index:9999 !important; left:calc(50vw - 15vw);">
+        <i class="close icon"></i>
+        <div class="header">
+            <i class="warning icon"></i>&nbsp&nbspThis is only a static version&nbsp&nbsp<a class="sitelink" href="http://www.puneetgrover.me" target="_blank">>></a>&nbsp&nbsp&nbsp
+        </div>
+    </div>
     <div class="ui left demo vertical inverted sidebar menu sidebarmenu">
-        <a class="item">
+        <a class="active item">
             <i class="home icon"></i> Home
         </a>
-        <a class="item">
-            <i class="feed icon"></i> Blog
+        <a class="item" href="blog.html">
+            <i class="feed icon"></i>Blog
         </a>
-        <a class="item">
+        <a class="item" href="projects.html">
             <i class="edit icon"></i> Projects
         </a>
-        <a class="item">
+        <a class="item" href="resume.html">
             <i class="remove bookmark icon"></i> Resume
         </a>
     </div>
     <div class="ui segment topmenuseg">
         <div class="ui secondary pointing menu">
-            <a class="active item menumain">Menu</a>
+            <a class="active item menumain"><i class="sidebar icon"></i>Menu</a>
             <div class="right menu">
                 <!--<div class="item">
                     <div class="ui transparent icon input">
@@ -42,7 +65,7 @@
                 </div>
                     <a class="item signin">Sign In</a>
                     <a class="item signup">Sign Up</a>-->
-                <a class="item">About</a>
+                <a class="item aboutshow">About</a>
             </div>
         </div>
     </div>
@@ -143,7 +166,7 @@
                 <div class="ui active dimmer">
                     <div class="content">
                         <div class="center">
-                            <h4 class="ui grey inverted header">Hi! I am</h4>
+                            <h4 class="ui grey inverted header hidsmall">Hi, My name is</h4>
                             <h1 class="ui grey inverted header">Puneet Grover</h1>
                             <h4 class="ui grey inverted header">PROGRAMER, DEVELOPER, LEARNER.</h4>
                         </div>
@@ -152,7 +175,7 @@
                 <img class="ui fluid image frontimage" src="back.jpg">
             </div>
             <div class="content cardcontent">
-                <div class="ui fluid green segment conseg">
+                <div class="ui fluid segment conseg">
                     <div class="column stackable ui equal width grid">
                         <div class="column">
                         </div>
@@ -251,7 +274,7 @@
 
                                 <div class="item">
                                     <div class="ui small image">
-                                        <img class="disabled ui image" src="universe/8.svg">
+                                        <img class="disabled ui image" src="universe/8.png">
                                     </div>
                                     <div class="content">
                                         <div class="header">Puzzles</div>
@@ -278,9 +301,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
                         <div class="column">
@@ -292,14 +312,23 @@
             </div>
             <div class="extra content footer">
                 <div class="ui fluid inverted segment footerseg">
-                    <div class="column stackable ui equal width grid">
+                    <div class="center aligned column stackable ui equal width grid footergrid">
                         <div class="column">
+                            <div class="center aligned socialicons">
+                                <i class="big facebook icon"></i>
+                                <i class="big github icon"></i>
+                                <i class="big linkedin icon"></i>
+                                <i class="big lastfm icon"></i>
+                            </div>
                         </div>
                         <div class="column">
                         </div>
                         <div class="column">
+                            <!--<i>Made with</i><span style="color: rgb(255, 49, 49); font-size: 20px; vertical-align:sub;">  ❤  </span><i>in India.</i>-->
+                            © 2017&nbsp&nbsp&nbspAll rights reserved
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -314,6 +343,44 @@
 
 
     </div>
+
+
+
+
+    <div class="ui small modal" style="top: 10vw !important;">
+        <div class="segment" style="min-height:25vw !important;">
+            <h2 class="ui right floated header" style="margin-top:10px;">About Me</h2>
+            <div class="ui clearing divider"></div>
+
+            <div class="ui two column very relaxed grid" style=" min-height:20vw !important;">
+                <div class="three wide column" style="margin-left:10px;">
+                    <img class="ui centered small circular image" src="image.png">
+                </div>
+                <div class="ui vertical divider" style="position:relative;"></div>
+                <div class="eight wide column abtcol">
+                    <div class="center aligned" style="margin-left:20px;">
+                        <p style="font-family: Verdana, Cursive">I am a senior year computer engineering student at NSIT, University of Delhi, India. I am a passionate coder, and always looking for learning new technologies. I code to create new things and solve interesting problems.</p>
+                        <p style="font-family: Verdana, Cursive">I have 3 years of programming experience in C/C++. I have a decent command over Data structures and algorithms. Apart from this, I have experience of coding in Java, Javascript, NodeJS and Python.</p>
+                        <p style="font-family: Verdana, Cursive">I have intermediate level WebDevelopment and beginner level MachineLearning skills.</p>
+                        <p style="font-family: Verdana, Cursive">Curious!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 <script src="script.js" type="text/javascript"></script>
 
