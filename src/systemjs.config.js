@@ -14,10 +14,6 @@
             // our app is within the app folder
             'app': 'app',
             'jquery': 'https://code.jquery.com/jquery-3.1.1.min.js',
-            'semantic_ui_sidebar': 'npm:semantic-ui-sidebar/sidebar.min.js',
-            'semantic_ui_dimmer': 'npm:semantic-ui-dimmer/dimmer.min.js',
-            'semantic_ui_modal': 'npm:semantic-ui-modal/modal.min.js',
-            'semantic_ui_transition': 'npm:semantic-ui-transition/transition.min.js',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
