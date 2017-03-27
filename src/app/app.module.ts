@@ -22,7 +22,7 @@ import { Resume } from './components/resume/resume.component';
        },
        {
          path: 'home',
-         component: Home;
+         component: Home,
        },
       {
         path: 'projects',
