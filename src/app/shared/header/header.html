@@ -1,27 +1,21 @@
-<div class="ui warning floating message warmsg" style="position:fixed !important; max-width:30vw !important; margin:0em !important; z-index:9999 !important; left:calc(50vw - 15vw);">
-    <i class="close icon"></i>
-    <div class="header">
-        <i class="warning icon"></i> This is only a static version <a class="sitelink" href="http://www.puneetgrover.me" target="_blank"> >>   </a>
-    </div>
-</div>
-<div class="ui secondary inverted pointing menu" style="margin-top:0em !important; position:fixed;z-index:999 !important;min-width:100% !important;">
-    <a class="active item">
+<div class="ui secondary pointing menu togglemenu" style="margin-top:0em !important; position:fixed !important;z-index:999 !important;min-width:100% !important;">
+    <a class="active item" routerLink="/home">
         <i class="home icon"></i> Home
     </a>
-    <a class="item" href="blog.html">
+    <a class="item" routerLink="/blog">
         <i class="feed icon"></i>Blog
     </a>
-    <a class="item" href="projects.html">
+    <a class="item" routerLink="/projects">
         <i class="edit icon"></i> Projects
     </a>
-    <a class="item" href="resume.html">
+    <a class="item" routerLink="/resume">
         <i class="remove bookmark icon"></i> Resume
     </a>
     <div class="right menu">
-
         <a class="item aboutshow">About</a>
     </div>
 </div>
+
 <div class="ui small modal" style="top: 10vw !important;">
     <div class="segment" style="min-height:25vw !important;">
         <h2 class="ui right floated header" style="margin-top:10px;">About Me</h2>
@@ -42,3 +36,4 @@
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>

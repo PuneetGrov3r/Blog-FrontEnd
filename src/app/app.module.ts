@@ -1,15 +1,44 @@
-import { NgModule, AfterContentInit }      from '@angular/core';
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule }   from '@angular/router';
 declare var $: any;
 
 import { AppComponent }  from './app.component';
 import { Home } from './components/home/home.component';
 import { Header } from './shared/header/header';
 import { Footer } from './shared/footer/footer';
+import { Blog } from './components/blog/blog.component';
+import { Projects } from './components/projects/projects.component';
+import { Resume } from './components/resume/resume.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent, Home, Header, Footer],
+  imports:      [ 
+    BrowserModule,
+     RouterModule.forRoot([
+       {
+         path: '',
+         redirectTo: '/home',
+         pathMatch: 'full'
+       },
+       {
+         path: 'home',
+         component: Home;
+       },
+      {
+        path: 'projects',
+        component: Projects
+      },
+      {
+        path: 'blog',
+        component: Blog
+      },
+      {
+        path: 'resume',
+        component: Resume
+      }
+    ])
+    ],
+  declarations: [ AppComponent, Home, Header, Footer, Blog, Projects, Resume],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {
@@ -20,6 +49,10 @@ export class AppModule {
       let $signup = document.getElementsByClassName('signup');
       let $about = document.getElementsByClassName('aboutshow');
       let country = [];
+      let $nav = $('.togglemenu');
+      let $win = $(window);
+      let winH = $win.height();
+      $win.on("scroll", function () {if ($(this).scrollTop() > winH ) {$nav.addClass("inverted");} else {$nav.removeClass("inverted");}}).on("resize", function(){winH = $(this).height();});
       function sidemenutoggle() {$('.ui.sidebar').sidebar('toggle');}
       function signinshow() {$('.ui.signin1.modal').modal('show');}
       function countrylist() {$('.ui.search').search({source: country});}
