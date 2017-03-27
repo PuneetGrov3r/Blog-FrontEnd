@@ -1,2 +1,2 @@
-# PuneetGrov3r.github.io
-My website
+# Front End of my website
+Front end using Angular and Semantic-UI
