@@ -16,12 +16,12 @@ import { Resume } from './components/resume/resume.component';
     BrowserModule,
      RouterModule.forRoot([
        {
-         path: '',
-         redirectTo: '/home',
+         path: 'home',
+         redirectTo: '',
          pathMatch: 'full'
        },
        {
-         path: 'home',
+         path: '',
          component: Home,
        },
       {
