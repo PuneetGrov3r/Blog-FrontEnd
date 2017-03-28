@@ -11,6 +11,7 @@ import { Blog } from './components/blog/blog.component';
 import { Projects } from './components/projects/projects.component';
 import { Resume } from './components/resume/resume.component';
 import { BlogService } from './services/blog.service';
+import { BlogDetailComponent } from './components/blog/blog-show.component';
 
 @NgModule({
   imports:      [ 
@@ -40,7 +41,7 @@ import { BlogService } from './services/blog.service';
     ])
     ],
     providers:[BlogService],
-  declarations: [ AppComponent, Home, Header, Footer, Blog, Projects, Resume],
+  declarations: [ AppComponent, Home, Header, Footer, Blog, Projects, Resume, BlogDetailComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {

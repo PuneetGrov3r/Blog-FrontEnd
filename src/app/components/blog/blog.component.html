@@ -3,6 +3,7 @@
         min-height: 250px !important;
     }
 </style>
+
 <div class="ui  card frontcard">
     <div class="content cardcontent">
         <div class="ui fluid transparent segment conseg">
@@ -21,7 +22,7 @@
                 </div>
                 <div class="eight wide column">
                     <div class="ui relaxed divided list" style="margin-top:calc(2.85714286em + 3vw) !important;">
-                        <div class="item" *ngFor="let blog of blogs">
+                        <div class="item" *ngFor="let blog of blogs" [class.selected]="blog === selectedBlog" (click)="onSelect(blog)">
                             <div class="content">
                                 <a class="header">{{ blog.heading }}</a>
                                 <div class="description">{{ blog.date }} {{ blog.month }} {{ blog.year }}</div>
@@ -60,3 +61,5 @@
     </div>
     <footer></footer>
 </div>
+<blog-show [blog]="selectedBlog">
+</blog-show>

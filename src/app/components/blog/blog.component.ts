@@ -20,6 +20,7 @@ class Blogtype {
 
 export class Blog implements OnInit { 
   blogs: Blogtype[];
+  selectedBlog: Blog;
 
   constructor( private blogService: BlogService ){
     $(document).ready(function () {
@@ -37,5 +38,8 @@ export class Blog implements OnInit {
 
   ngOnInit(): void {
     this.getBlogData();
+  }
+  onSelect(blog: Blog): void {
+    this.selectedBlog = blog;
   }
  }
