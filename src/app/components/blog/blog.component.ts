@@ -10,7 +10,7 @@ export class Blog {
     $(document).ready(function () {
       let $inactive = $('.togglemenu>.item');
       let $active = $('.blogactive');
-      console.log($inactive);
+      //console.log($inactive);
       for (let i = 0; i < $inactive.length; i++){ $inactive.removeClass('active'); }
       for (let i = 0; i < $inactive.length; i++){ $active.addClass('active'); }
     });
