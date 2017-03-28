@@ -10,6 +10,7 @@ import { Footer } from './shared/footer/footer';
 import { Blog } from './components/blog/blog.component';
 import { Projects } from './components/projects/projects.component';
 import { Resume } from './components/resume/resume.component';
+import { BlogService } from './services/blog.service';
 
 @NgModule({
   imports:      [ 
@@ -38,6 +39,7 @@ import { Resume } from './components/resume/resume.component';
       }
     ])
     ],
+    providers:[BlogService],
   declarations: [ AppComponent, Home, Header, Footer, Blog, Projects, Resume],
   bootstrap:    [ AppComponent ]
 })
