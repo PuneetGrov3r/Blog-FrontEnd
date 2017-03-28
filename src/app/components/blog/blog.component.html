@@ -21,26 +21,11 @@
                 </div>
                 <div class="eight wide column">
                     <div class="ui relaxed divided list" style="margin-top:calc(2.85714286em + 3vw) !important;">
-                        <div class="item">
-
+                        <div class="item" *ngFor="let blog of blogs">
                             <div class="content">
-                                <a class="header">Blah blah blah!</a>
-                                <div class="description">12th Oct 2016</div>
-                                <p>Iiaufh puwehfpw pfouwhepfuo eahpo vhepofhpoehgpoesngpowejngpeoj ngpowe gpowengpwoejgnpweojgnwpeojg pweog wepgo jnwepogjneopgjnep gwe gowengpowej gwe g weognpwoeg weojg npeo jgnp spirg pirsgbpwie gpweigbpaweijgbpe sgaw epigajanebwpigjpseg
-                                    jsrg r gjpsrngpjs rpgns rpjgnspg npsr gno srgp pse g.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a class="header">To a new start</a>
-                                <div class="description">23rd Dec 2016</div>
-                            </div>
-                        </div>
-                        <div class="item">
-
-                            <div class="content">
-                                <a class="header">Journey of life</a>
-                                <div class="description">2nd Jan 2017</div>
+                                <a class="header">{{ blog.heading }}</a>
+                                <div class="description">{{ blog.date }} {{ blog.month }} {{ blog.year }}</div>
+                                <p>{{ blog.data }}</p>
                             </div>
                         </div>
                     </div>
