@@ -10,8 +10,9 @@ import { Footer } from './shared/footer/footer';
 import { Blog } from './components/blog/blog.component';
 import { Projects } from './components/projects/projects.component';
 import { Resume } from './components/resume/resume.component';
-import { BlogService } from './services/blog.service';
+
 import { BlogDetailComponent } from './components/blog/blog-show.component';
+import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
   imports:      [ 
@@ -40,8 +41,7 @@ import { BlogDetailComponent } from './components/blog/blog-show.component';
       }
     ])
     ],
-    providers:[BlogService],
-  declarations: [ AppComponent, Home, Header, Footer, Blog, Projects, Resume, BlogDetailComponent],
+  declarations: [ AppComponent, Home, Header, Footer, Blog, Projects, Resume, BlogDetailComponent, TruncatePipe],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {

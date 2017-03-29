@@ -26,11 +26,22 @@
                             <div class="content">
                                 <a class="header">{{ blog.heading }}</a>
                                 <div class="description">{{ blog.date }} {{ blog.month }} {{ blog.year }}</div>
-                                <p>{{ blog.data }}</p>
+                                <p>{{ blog.data | truncate : 50 }}</p>
                             </div>
+
                         </div>
                     </div>
-                    <div class="column ui equal width grid">
+
+
+
+                    <blog-show [blog]="selectedBlog">
+                    </blog-show>
+
+
+
+
+
+                    <!--<div class="column ui equal width grid">
                         <div class="column">
                             <button class="fluid ui left floated icon button">
                                     <i class="left chevron icon"></i>Prev
@@ -52,7 +63,7 @@
                                     <i class="right chevron icon"></i>
                                 </button>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="column">
                 </div>
@@ -61,5 +72,3 @@
     </div>
     <footer></footer>
 </div>
-<blog-show [blog]="selectedBlog">
-</blog-show>

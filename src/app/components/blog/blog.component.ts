@@ -26,9 +26,19 @@ export class Blog implements OnInit {
     $(document).ready(function () {
       let $inactive = $('.togglemenu>.item');
       let $active = $('.blogactive');
-      //console.log($inactive);
-      for (let i = 0; i < $inactive.length; i++){ $inactive.removeClass('active'); }
-      for (let i = 0; i < $inactive.length; i++){ $active.addClass('active'); }
+      $inactive.removeClass('active');
+      $active.addClass('active');
+
+      let $close = $('.ui.fullscreen.modal.visible');
+      function modalhide(){
+        $close.removeClass('active');
+      }
+      let $icon = $('.close.icon');
+      for (let i = 0; i < $icon.length; i++) {$icon.addEventListener('click', modalhide, false);}
+
+      //let $modal = document.getElementsByClassName('modalshow');
+      //function modalshow() {$('.ui.fullscreen.modal').modal('show');}
+      //for (let i = 0; i < $modal.length; i++) {$modal[i].addEventListener('click', modalshow, false);}
     });
   }
 
@@ -41,5 +51,6 @@ export class Blog implements OnInit {
   }
   onSelect(blog: Blog): void {
     this.selectedBlog = blog;
+    
   }
  }

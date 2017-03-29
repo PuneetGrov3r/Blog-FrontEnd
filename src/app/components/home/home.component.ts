@@ -11,8 +11,8 @@ export class Home  {
       let $inactive = $('.togglemenu>.item');
       let $active = $('.homeactive');
       //console.log($inactive);
-      for (let i = 0; i < $inactive.length; i++){ $inactive.removeClass('active'); }
-      for (let i = 0; i < $inactive.length; i++){ $active.addClass('active'); }
+      $inactive.removeClass('active');
+      $active.addClass('active');
     });
   }
  }
