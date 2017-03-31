@@ -21,23 +21,31 @@ import { TruncatePipe } from './truncate.pipe';
        {
          path: 'home',
          redirectTo: '',
-         pathMatch: 'full'
+         pathMatch: 'full',
        },
        {
          path: '',
          component: Home,
+
        },
       {
         path: 'projects',
-        component: Projects
+        component: Projects,
+
       },
       {
         path: 'blog',
-        component: Blog
+        component: Blog,
+        pathMatch: 'full',
       },
       {
         path: 'resume',
-        component: Resume
+        component: Resume,
+
+      },
+      {
+        path: 'blog/:id',
+        component: BlogDetailComponent,
       }
     ])
     ],

@@ -22,9 +22,9 @@
                 </div>
                 <div class="eight wide column">
                     <div class="ui relaxed divided list" style="margin-top:calc(2.85714286em + 3vw) !important;">
-                        <div class="item" *ngFor="let blog of blogs" [class.selected]="blog === selectedBlog" (click)="onSelect(blog)">
+                        <div class="item" *ngFor="let blog of blogs">
                             <div class="content">
-                                <a class="header">{{ blog.heading }}</a>
+                                <a class="header" [routerLink]="[ '/blog', blog.id]">{{ blog.heading }}</a>
                                 <div class="description">{{ blog.date }} {{ blog.month }} {{ blog.year }}</div>
                                 <p>{{ blog.data | truncate : 100 }}</p>
                             </div>
@@ -34,8 +34,8 @@
 
 
 
-                    <blog-show [blog]="selectedBlog">
-                    </blog-show>
+                    <router-outlet>
+                    </router-outlet>
 
 
 
