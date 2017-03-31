@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 class Blogtype {
   id: number;
   date: number;
-  month:string;
-  year:number;
-  heading:string;
-  data:string;
+  month: string;
+  year: number;
+  heading: string;
+  data: string;
 }
 
 import { BlogData } from './blog.data';

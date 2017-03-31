@@ -15,7 +15,7 @@ import { BlogDetailComponent } from './components/blog/blog-show.component';
 import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
-  imports:      [ 
+  imports:      [
     BrowserModule,
      RouterModule.forRoot([
        {
